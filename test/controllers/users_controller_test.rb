@@ -31,7 +31,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     log_in_as(@other_user)
     get edit_user_path(@user)
 
-    assert.flash.empty?
+    assert flash.empty?
     assert_redirected_to root_url
   end
 
