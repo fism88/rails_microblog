@@ -9,6 +9,11 @@ archer:
   email: duchess@example.gov
   password_digest: <%= User.digest('password') %>
 
+malory:
+  name: Malory Simpson
+  email: malory@example.gov
+  password_digest: <%= User.digest('password') %>
+
 <% 40.times do |n| %>
 user_<%= n %>:
   name: <%= "User #{n}" %>
