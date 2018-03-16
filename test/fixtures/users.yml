@@ -14,6 +14,11 @@ malory:
   email: malory@example.gov
   password_digest: <%= User.digest('password') %>
 
+lana:
+  name: Lana Greg
+  email: lana@example.com
+  password_digest: <%= User.digest('password') %>
+
 <% 40.times do |n| %>
 user_<%= n %>:
   name: <%= "User #{n}" %>
